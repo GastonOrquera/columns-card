@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{ 
+    --fuente-principal: 'Big Shoulders Display', cursive;
+    --fuente-secundaria: 'Lexend Deca', sans-serif; 
+    --Bright : hsl(31, 77%, 52%);
+    --Dark: hsl(184, 100%, 22%);
+    --Very-dark: hsl(179, 100%, 13%); 
+    --parrafos: hsla(0, 0%, 100%, 0.75);
+    --back-btn-head:  hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.402);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    display: flex;
+    box-shadow: 0px 0px 4rem rgb(135, 135, 135);
+    width: 100vh;
+    height: 24rem;
+}
+
+h2{
+    font-family: var(--fuente-principal);
+    color: var(--back-btn-head);
+    padding: 1rem 0;
+}
+
+p{
+    color: var(--parrafos);
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+}
+
+a{
+    display: flex;
+    font-family: var(--fuente-secundaria);
+    align-items: center;
+    justify-content: center;
+    padding: .8rem 1rem;
+    border-top-right-radius: 1.4rem;
+    border-bottom-right-radius: 1.4rem;
+    border-top-left-radius: 1.4rem;
+    border-bottom-left-radius: 1.4rem;
+    background-color: var(--back-btn-head);
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 15px;
+}
+
+.a-1{
+    color: var(--Bright);
+}
+
+.a-2{
+    color: var(--Dark);
+}
+
+.a-3{
+    color: var(--Very-dark);
+}
+
+.boxs{
+    padding: 1rem 2rem;
+    /* align-items: center; */
+}
+    
+.contenedor .b1{
+    background-color: var(--Bright);
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.contenedor .b2{
+    background-color: var(--Dark);
+}
+
+.contenedor .b3{
+    background-color: var(--Very-dark);
+    border-bottom-right-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+/* MEDIA */
+
+@media (max-width: 767px){
+
+body{
+    padding-bottom: 38rem;
+}
+
+
+    .contenedor{
+        flex-direction: column;
+        width: 16rem;
+        /* height: 24rem; */
+        
+    }
+
+    .contenedor .b1{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .5rem;
+    }
+
+    .contenedor .b3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .5rem;
+    }
+
+
+
+}
